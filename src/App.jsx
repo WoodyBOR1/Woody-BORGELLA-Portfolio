@@ -73,7 +73,7 @@ const translations = {
         {
           id: 4,
           title: "Projet pilotage CNAT - CAF",
-          description: "Pilotage de la performance téléphonique au sein du CNAT (CAF) : analyse fine des motifs d’appel, des taux de service et de saturation pour des appels traités. Conception d’indicateurs mensuels et d’outils d’optimisation pour améliorer la qualité et l’efficience du modèle de réponse enrichie.",
+          description: "Pilotage de la performance téléphonique au sein du CNAT (CAF) : analyse des motifs d’appel, des taux de service et de saturation pour des appels traités. Conception d’indicateurs mensuels et d’outils d’optimisation pour améliorer la qualité et l’efficience du modèle de réponse enrichie.",
           tags: ["SQL", "Power BI"],
           category: "Analytics",
           link: "https://app.powerbi.com/reportEmbed?reportId=4bf4c51a-a0af-4177-9fd2-ca97b800470c&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8"
@@ -149,7 +149,7 @@ const translations = {
         {
           id: 4,
           title: "CNAT - CAF Steering Project",
-          description: "Telephone performance steering within the CNAT (CAF): detailed analysis of call reasons, service levels, and saturation rates for processed calls. Designing monthly indicators and optimization tools to improve the quality and efficiency of the enriched response model.",
+          description: "Telephone performance steering within the CNAT (CAF): analysis of call reasons, service levels, and saturation rates for processed calls. Designing monthly indicators and optimization tools to improve the quality and efficiency of the enriched response model.",
           tags: ["SQL", "Power BI"],
           category: "Analytics",
           link: "https://app.powerbi.com/reportEmbed?reportId=4bf4c51a-a0af-4177-9fd2-ca97b800470c&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8"
