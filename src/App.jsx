@@ -43,7 +43,7 @@ const translations = {
           id: 0,
           title: "Projet « Article 51 CECICS »",
           description: "Pilotage du traitement et de l’analyse des données pour l’évaluation finale du projet intégré au droit commun.",
-          tags: ["Analyse de données", "Pilotage", "Santé", "Politique Publique"],
+          tags: ["Analyse de données", "Santé", "Politique Publique"],
           category: "Analyse & Impact / Évaluation de projets",
           link: "https://sante.gouv.fr/IMG/pdf/rapport_final_evaluation_cecics_iexp_ic.pdf"
         },
@@ -51,29 +51,30 @@ const translations = {
           id: 1,
           title: "Détection de fraude sur transactions bancaires",
           description: "Analyse avancée d’un dataset déséquilibré et création de visualisations exploitables pour optimiser la détection d’anomalies.",
-          tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost", "Imbalanced-learn"],
+          tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost"],
           category: "Data Science / Machine Learning",
           link: "https://woodybor1.github.io/Credit-Card-Fraud-Detection/"
         },
         {
           id: 2,
-          title: "Visualisation des Ventes Globales – Tendances, Segments et Performance",
-          description: "Visualisation interactive des performances commerciales. Identification de leviers de croisssance.",
-          tags: ["Power BI", "SQL", "Excel"],
-          category: "Data Visualization"
+          title: "Visualisation des Ventes Globales : Tendances, Segments et Performance",
+          description: "Pilotage de la performance commerciale mondiale grâce à une vision claire par produits, pays et saisonnalité. Analyse de la rentabilité et des tendances pour guider les décisions stratégiques. Dashboard conçu pour une lecture immédiate et actionnable par les équipes business.",
+          tags: ["Power BI", "SQL"],
+          category: "Data Visualization",
+          link: "https://app.powerbi.com/reportEmbed?reportId=c1fcf6ae-f455-432e-8fd7-a2f60fbc9f63&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8"
         },
         {
           id: 3,
           title: "E-commerce : Analyse Rentabilité Clients",
           description: "Analyse des interactions clients avec les campagnes marketing pour identifier les segments les plus réactifs et rentables. Mise en évidence des comportements clés afin d’optimiser la stratégie et maximiser le ROI.",
-          tags: ["Python", "Optimization", "Gurobi"],
+          tags: ["Python", "Optimization"],
           category: "Marketing Analytics"
         },
         {
           id: 4,
           title: "Projet pilotage CNAT - CAF",
           description: "Pilotage de la performance téléphonique au sein du CNAT (CAF) : analyse fine des motifs d’appel, des taux de service et de saturation pour des appels traités. Conception d’indicateurs mensuels et d’outils d’optimisation pour améliorer la qualité et l’efficience du modèle de réponse enrichie.",
-          tags: ["SQL", "Power BI", "Pilotage"],
+          tags: ["SQL", "Power BI"],
           category: "Analytics",
           link: "https://app.powerbi.com/reportEmbed?reportId=4bf4c51a-a0af-4177-9fd2-ca97b800470c&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8"
         }
@@ -118,7 +119,7 @@ const translations = {
           id: 0,
           title: "Project « Article 51 CECICS »",
           description: "Steering the treatment and analysis of data for the final evaluation of the project integrated into common law.",
-          tags: ["Data Analysis", "Steering", "Health", "Public Policy"],
+          tags: ["Data Analysis", "Health", "Public Policy"],
           category: "Analysis & Impact / Project Evaluation",
           link: "https://sante.gouv.fr/IMG/pdf/rapport_final_evaluation_cecics_iexp_ic.pdf"
         },
@@ -126,28 +127,30 @@ const translations = {
           id: 1,
           title: "Bank Transaction Fraud Detection",
           description: "Analysis of the imbalance between normal and fraudulent transactions, supported by clear and actionable visualizations.",
-          tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost", "Imbalanced-learn"],
-          category: "Data Science / Machine Learning – Fraud Detection"
+          tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost"],
+          category: "Data Science / Machine Learning – Fraud Detection",
+          link: "https://woodybor1.github.io/Credit-Card-Fraud-Detection/"
         },
         {
           id: 2,
-          title: "Global Sales Visualization – Trends, Segments and Performance",
-          description: "Interactive visualization of commercial performance. Identification of growth levers.",
-          tags: ["Power BI", "SQL", "Excel"],
-          category: "Data Visualization"
+          title: "Global Sales Visualization: Trends, Segments and Performance",
+          description: "Global sales performance management through a clear view by products, countries, and seasonality. Analysis of profitability and trends to guide strategic decisions. Dashboard designed for immediate and actionable reading by business teams.",
+          tags: ["Power BI", "SQL"],
+          category: "Data Visualization",
+          link: "https://app.powerbi.com/reportEmbed?reportId=c1fcf6ae-f455-432e-8fd7-a2f60fbc9f63&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8"
         },
         {
           id: 3,
           title: "E-commerce: Customer Profitability Analysis",
           description: "Analysis of customer interactions with marketing campaigns to identify the most responsive and profitable segments. Highlighting key behaviors to optimize strategy and maximize ROI.",
-          tags: ["Python", "Optimization", "Gurobi"],
+          tags: ["Python", "Optimization"],
           category: "Marketing Analytics"
         },
         {
           id: 4,
           title: "CNAT - CAF Steering Project",
           description: "Telephone performance steering within the CNAT (CAF): detailed analysis of call reasons, service levels, and saturation rates for processed calls. Designing monthly indicators and optimization tools to improve the quality and efficiency of the enriched response model.",
-          tags: ["SQL", "Power BI", "Steering"],
+          tags: ["SQL", "Power BI"],
           category: "Analytics",
           link: "https://app.powerbi.com/reportEmbed?reportId=4bf4c51a-a0af-4177-9fd2-ca97b800470c&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8"
         }
