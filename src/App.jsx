@@ -52,7 +52,7 @@ const translations = {
           title: "Détection de fraude sur transactions bancaires",
           description: "Analyse du déséquilibre entre transactions normales et frauduleuses, appuyée par des visualisations claires et exploitables.",
           tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost", "Imbalanced-learn"],
-          category: "Data Science / Machine Learning – Détection de Fraude"
+          category: "Data Science / Machine Learning"
         },
         {
           id: 2,
@@ -187,7 +187,7 @@ function App() {
           <div className="container hero-grid">
             <div className="hero-text">
               <div className="hello-pill-capture">
-                <span>👋</span> {t.hero.hello}, {t.hero.im.toLowerCase()}
+                <span className="waving-hand">👋</span> {t.hero.hello}, {t.hero.im.toLowerCase()}
               </div>
 
               <h1 className="hero-name-capture">
@@ -231,6 +231,12 @@ function App() {
             <div className="hero-image-pro">
               <div className="image-frame-pro">
                 <img src="portfolio/profile_pro.jpg" alt="Woody BORGELLA" className="main-profile-img" />
+
+                {/* Émojis flottants thématiques */}
+                <div className="floating-badge-emoji e1">📊</div>
+                <div className="floating-badge-emoji e2">🤖</div>
+                <div className="floating-badge-emoji e3">📈</div>
+                <div className="floating-badge-emoji e4">🧠</div>
               </div>
             </div>
           </div>

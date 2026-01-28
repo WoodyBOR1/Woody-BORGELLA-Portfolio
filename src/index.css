@@ -245,7 +245,13 @@ nav {
 }
 
 .social-links-capture a {
-  color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  /* Plus lisible */
+  background: rgba(255, 255, 255, 0.05);
+  /* Petit fond pour détacher l'icône */
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: var(--transition);
   display: flex;
   align-items: center;
@@ -317,6 +323,102 @@ nav {
   100% {
     transform: scale(1);
     opacity: 0.3;
+  }
+}
+
+/* --- New Floating Emojis Styles --- */
+.floating-badge-emoji {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 5;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  animation: floatEmoji 4s ease-in-out infinite;
+}
+
+.e1 {
+  top: 10%;
+  left: -20px;
+  animation-delay: 0s;
+}
+
+.e2 {
+  top: 60%;
+  right: -20px;
+  animation-delay: 1s;
+}
+
+.e3 {
+  bottom: 15%;
+  left: -25px;
+  animation-delay: 2s;
+}
+
+.e4 {
+  top: 35%;
+  right: -15px;
+  animation-delay: 1.5s;
+}
+
+@keyframes floatEmoji {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+/* Waving Hand Animation */
+.waving-hand {
+  display: inline-block;
+  animation: wave 2.5s infinite;
+  transform-origin: 70% 70%;
+  font-size: 1.2rem;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
   }
 }
 
