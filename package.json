@@ -1,9 +1,9 @@
 {
-  "name": "data-portfolio",
+  "name": "woody-borgella-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://WoodyBOR1.github.io/data-portfolio/",
+  "homepage": "https://WoodyBOR1.github.io/Woody-BORGELLA-Portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

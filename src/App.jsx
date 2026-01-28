@@ -6,7 +6,7 @@ const SOCIAL_LINKS = {
   github: "https://github.com/WoodyBOR1",
   linkedin: "https://www.linkedin.com/in/woody-borgella-2794b4198/",
   email: "mailto:woodyborgella@yahoo.fr",
-  cv: "/portfolio/CV_DataAnalytics.pdf" // Le fichier a été copié depuis OneDrive vers le dossier public
+  cv: "portfolio/CV_Woody_BORGELLA.pdf" // Nom de fichier sécurisé pour le web
 };
 
 const translations = {
@@ -30,7 +30,7 @@ const translations = {
       experience_title: "EXPÉRIENCES"
     },
     stats: [
-      { id: 1, label: "Années d'expérience", value: "6+" },
+      { id: 1, label: "Années d'expérience", value: "7+" },
       { id: 2, label: "Projets livrés", value: "15+" },
       { id: 3, label: "Technologies maîtrisées", value: "20+" },
       { id: 4, label: "Certifications", value: "15+" }
@@ -43,16 +43,16 @@ const translations = {
           id: 0,
           title: "Projet « Article 51 CECICS »",
           description: "Pilotage du traitement et de l’analyse des données pour l’évaluation finale du projet intégré au droit commun.",
-          tags: ["Analyse de données", "Pilotage", "Santé"],
-          category: "Analyse & Impact",
+          tags: ["Analyse de données", "Pilotage", "Santé", "Politique Publique"],
+          category: "Analyse & Impact / Évaluation de projets",
           link: "https://sante.gouv.fr/IMG/pdf/rapport_final_evaluation_cecics_iexp_ic.pdf"
         },
         {
           id: 1,
-          title: "Analyse du Churn Télécom",
-          description: "Prédiction du désabonnement client avec Random Forest. Réduction de 15% du taux d'attrition via des campagnes ciblées.",
-          tags: ["Python", "Scikit-Learn", "Pandas"],
-          category: "Machine Learning"
+          title: "Détection de fraude sur transactions bancaires",
+          description: "Analyse du déséquilibre entre transactions normales et frauduleuses, appuyée par des visualisations claires et exploitables.",
+          tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost", "Imbalanced-learn"],
+          category: "Data Science / Machine Learning – Détection de Fraude"
         },
         {
           id: 2,
@@ -63,17 +63,17 @@ const translations = {
         },
         {
           id: 3,
-          title: "Optimisation de Logistique",
-          description: "Analyse des flux de chaîne d'approvisionnement. Réduction des délais de livraison de 48h à 24h grâce à l'analyse de données.",
+          title: "E-commerce : Analyse Rentabilité Clients",
+          description: "Analyse des interactions clients avec les campagnes marketing pour identifier les segments les plus réactifs et rentables. Mise en évidence des comportements clés afin d’optimiser la stratégie et maximiser le ROI.",
           tags: ["Python", "Optimization", "Gurobi"],
-          category: "Operational Research"
+          category: "Marketing Analytics"
         },
         {
           id: 4,
-          title: "Segmentation Clients E-commerce",
+          title: "Segmentation Clients",
           description: "Regroupement des clients par comportement d'achat (RFM). Personnalisation des stratégies marketing par segment.",
           tags: ["K-Means", "Python", "Clustering"],
-          category: "Marketing Analytics"
+          category: "Analytics"
         }
       ]
     },
@@ -96,7 +96,7 @@ const translations = {
       name: "Woody BORGELLA",
       jobPrefix: "DATA ANALYTICS & MACHINE LEARNING",
       subtitle: "Data Analytics & Machine Learning",
-      description: "I'm a data analyst based in France, very passionate and dedicated to transforming <span class='text-highlight'>data</span> into strategic <span class='text-highlight'>insights</span>.",
+      description: "I transform your ideas into data, and your data into <span class='text-highlight'>actionable results</span> to optimize performance and innovation.",
       cta_projects: "My projects",
       cta_contact: "Contact",
       cta_cv: "Download my CV",
@@ -116,37 +116,37 @@ const translations = {
           id: 0,
           title: "Project « Article 51 CECICS »",
           description: "Steering the treatment and analysis of data for the final evaluation of the project integrated into common law.",
-          tags: ["Data Analysis", "Steering", "Health"],
-          category: "Analysis & Impact",
+          tags: ["Data Analysis", "Steering", "Health", "Public Policy"],
+          category: "Analysis & Impact / Project Evaluation",
           link: "https://sante.gouv.fr/IMG/pdf/rapport_final_evaluation_cecics_iexp_ic.pdf"
         },
         {
           id: 1,
-          title: "Telecom Churn Analysis",
-          description: "Customer churn prediction using Random Forest. Reduced attrition rate by 15% through targeted campaigns.",
-          tags: ["Python", "Scikit-Learn", "Pandas"],
-          category: "Machine Learning"
+          title: "Bank Transaction Fraud Detection",
+          description: "Analysis of the imbalance between normal and fraudulent transactions, supported by clear and actionable visualizations.",
+          tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost", "Imbalanced-learn"],
+          category: "Data Science / Machine Learning – Fraud Detection"
         },
         {
           id: 2,
-          title: "Global Sales Dashboard",
-          description: "Interactive visualization of worldwide commercial performance. Identified 20% growth levers in Europe.",
+          title: "Global Sales Visualization – Trends, Segments and Performance",
+          description: "Interactive visualization of commercial performance. Identification of growth levers.",
           tags: ["Power BI", "SQL", "Excel"],
           category: "Data Visualization"
         },
         {
           id: 3,
-          title: "Logistics Optimization",
-          description: "Supply chain flow analysis. Reduced delivery times from 48h to 24h through data-driven insights.",
+          title: "E-commerce: Customer Profitability Analysis",
+          description: "Analysis of customer interactions with marketing campaigns to identify the most responsive and profitable segments. Highlighting key behaviors to optimize strategy and maximize ROI.",
           tags: ["Python", "Optimization", "Gurobi"],
-          category: "Operational Research"
+          category: "Marketing Analytics"
         },
         {
           id: 4,
-          title: "E-commerce Segmentation",
-          description: "Customer grouping by purchasing behavior (RFM). Personalized marketing strategies by segment.",
+          title: "Customer Segmentation",
+          description: "Group customers by purchasing behavior (RFM). Personalization of marketing strategies by segment.",
           tags: ["K-Means", "Python", "Clustering"],
-          category: "Marketing Analytics"
+          category: "Analytics"
         }
       ]
     },
@@ -166,9 +166,7 @@ function App() {
     <div className="portfolio">
       <nav>
         <div className="container nav-content">
-          <div className="logo-text">
-            Woody BORGELLA <span className="logo-tagline">| Data Analytics | Machine Learning</span>
-          </div>
+          <div className="logo-text">Woody.Portfolio</div>
           <ul className="nav-links">
             <li><a href="#home">{t.nav.home}</a></li>
             <li><a href="#experience">{t.nav.experience}</a></li>
@@ -232,7 +230,7 @@ function App() {
 
             <div className="hero-image-pro">
               <div className="image-frame-pro">
-                <img src="/portfolio/profile_pro.jpg" alt="Woody BORGELLA" className="main-profile-img" />
+                <img src="portfolio/profile_pro.jpg" alt="Woody BORGELLA" className="main-profile-img" />
               </div>
             </div>
           </div>
@@ -262,16 +260,28 @@ function App() {
           <div className="experience-architecture">
             <div className="experience-grid-row">
               <a href="https://www.aphp.fr" target="_blank" rel="noopener noreferrer" className="experience-link">
-                Assistance publique – Hôpitaux de Paris (AP-HP)
+                <div className="logo-box-capture">
+                  <img src="portfolio/aphp.png" alt="AP-HP" className="experience-logo" />
+                </div>
+                <span>Assistance publique – Hôpitaux de Paris (AP-HP)</span>
               </a>
               <a href="https://www.murs-erigne.fr/" target="_blank" rel="noopener noreferrer" className="experience-link">
-                Ville de Mûrs-Erigné
+                <div className="logo-box-capture">
+                  <img src="portfolio/murs.png" alt="Mûrs-Erigné" className="experience-logo" />
+                </div>
+                <span>Ville de Mûrs-Erigné</span>
               </a>
               <a href="https://www.angersloiremetropole.fr/" target="_blank" rel="noopener noreferrer" className="experience-link">
-                Angers Loire Métropole
+                <div className="logo-box-capture">
+                  <img src="portfolio/angers.png" alt="Angers" className="experience-logo" />
+                </div>
+                <span>Angers Loire Métropole</span>
               </a>
               <a href="https://www.mci.gouv.ht/" target="_blank" rel="noopener noreferrer" className="experience-link">
-                Ministère du Commerce et de l'industrie - Haiti
+                <div className="logo-box-capture">
+                  <img src="portfolio/haiti.png" alt="MCI Haiti" className="experience-logo" />
+                </div>
+                <span>Ministère du Commerce - Haiti</span>
               </a>
             </div>
           </div>
