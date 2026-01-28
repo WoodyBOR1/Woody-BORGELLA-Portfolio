@@ -53,7 +53,7 @@ const translations = {
           description: "Analyse avancée d’un dataset déséquilibré et création de visualisations exploitables pour optimiser la détection d’anomalies.",
           tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost", "Imbalanced-learn"],
           category: "Data Science / Machine Learning",
-         link: "https://woodybor1.github.io/Credit-Card-Fraud-Detection/"
+          link: "https://woodybor1.github.io/Credit-Card-Fraud-Detection/"
         },
         {
           id: 2,
@@ -71,10 +71,11 @@ const translations = {
         },
         {
           id: 4,
-          title: "Segmentation Clients",
+          title: "Projet pilotage CNAT - CAF",
           description: "Regroupement des clients par comportement d'achat (RFM). Personnalisation des stratégies marketing par segment.",
-          tags: ["K-Means", "Python", "Clustering"],
-          category: "Analytics"
+          tags: ["SQL", "Power BI", "Clustering"],
+          category: "Analytics",
+          link: "https://app.powerbi.com/reportEmbed?reportId=4bf4c51a-a0af-4177-9fd2-ca97b800470c&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8"
         }
       ]
     },
