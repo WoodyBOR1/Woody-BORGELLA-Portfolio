@@ -50,9 +50,10 @@ const translations = {
         {
           id: 1,
           title: "Détection de fraude sur transactions bancaires",
-          description: "Analyse du déséquilibre entre transactions normales et frauduleuses, appuyée par des visualisations claires et exploitables.",
+          description: "Analyse avancée d’un dataset déséquilibré et création de visualisations exploitables pour optimiser la détection d’anomalies.",
           tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost", "Imbalanced-learn"],
-          category: "Data Science / Machine Learning"
+          category: "Data Science / Machine Learning",
+         link: "https://woodybor1.github.io/Credit-Card-Fraud-Detection/"
         },
         {
           id: 2,
