@@ -59,9 +59,9 @@ const translations = {
           id: 2,
           title: "Visualisation des Ventes Globales : Tendances, Segments et Performance",
           description: "Pilotage de la performance commerciale mondiale grâce à une vision claire par produits, pays et saisonnalité. Analyse de la rentabilité et des tendances pour guider les décisions stratégiques. Dashboard conçu pour une lecture immédiate et actionnable par les équipes business.",
-          tags: ["Power BI", "SQL"],
+          tags: ["SQL", "Power BI"],
           category: "Data Visualization",
-          link: "https://app.powerbi.com/reportEmbed?reportId=c1fcf6ae-f455-432e-8fd7-a2f60fbc9f63&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8"
+          link: "https://app.powerbi.com/reportEmbed?reportId=c1fcf6ae-f455-432e-8fd7-a2f60fbc9f63&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8&actionBarEnabled=true"
         },
         {
           id: 3,
@@ -137,7 +137,7 @@ const translations = {
           description: "Global sales performance management through a clear view by products, countries, and seasonality. Analysis of profitability and trends to guide strategic decisions. Dashboard designed for immediate and actionable reading by business teams.",
           tags: ["Power BI", "SQL"],
           category: "Data Visualization",
-          link: "https://app.powerbi.com/reportEmbed?reportId=c1fcf6ae-f455-432e-8fd7-a2f60fbc9f63&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8"
+          link: "https://app.powerbi.com/reportEmbed?reportId=c1fcf6ae-f455-432e-8fd7-a2f60fbc9f63&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8&actionBarEnabled=true"
         },
         {
           id: 3,
