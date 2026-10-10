@@ -30,7 +30,7 @@ const translations = {
       experience_title: "EXPÉRIENCES"
     },
     stats: [
-      { id: 1, label: "Années d'expérience", value: "7+" },
+      { id: 1, label: "Années d'expérience", value: "10+" },
       { id: 2, label: "Projets livrés", value: "15+" },
       { id: 3, label: "Technologies maîtrisées", value: "20+" },
       { id: 4, label: "Certifications", value: "15+" }
@@ -50,7 +50,7 @@ const translations = {
         {
           id: 1,
           title: "Détection de fraude sur transactions bancaires",
-          description: "Analyse avancée d’un dataset déséquilibré et création de visualisations exploitables pour optimiser la détection d’anomalies.",
+          description: "Analyse avancée d’un dataset fortement déséquilibré pour identifier les comportements frauduleux.<br /><br />Création de visualisations exploitables pour optimiser la détection d’anomalies et guider les décisions métier.<br /><br />👉 Projet basé sur le dataset Kaggle : Voir ma page GitHub",
           tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost"],
           category: "Data Science / Machine Learning",
           link: "https://woodybor1.github.io/Credit-Card-Fraud-Detection/"
@@ -79,6 +79,8 @@ const translations = {
           link: "https://app.powerbi.com/reportEmbed?reportId=4bf4c51a-a0af-4177-9fd2-ca97b800470c&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8"
         }
       ]
+
+      
     },
     contact: {
       title: "DÉMARRONS UN PROJET ENSEMBLE",
@@ -106,7 +108,7 @@ const translations = {
       experience_title: "EXPERIENCES"
     },
     stats: [
-      { id: 1, label: "Years of experience", value: "7+" },
+      { id: 1, label: "Years of experience", value: "10+" },
       { id: 2, label: "Projects delivered", value: "15+" },
       { id: 3, label: "Mastered Technologies", value: "20+" },
       { id: 4, label: "Certifications", value: "15+" }
@@ -126,7 +128,7 @@ const translations = {
         {
           id: 1,
           title: "Bank Transaction Fraud Detection",
-          description: "Analysis of the imbalance between normal and fraudulent transactions, supported by clear and actionable visualizations.",
+          description: "Advanced analysis of a highly imbalanced dataset to identify fraudulent behavior.<br /><br />Creation of actionable visualizations to optimize anomaly detection and guide business decisions.<br /><br />👉 Project based on the Kaggle dataset: See my GitHub page",
           tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "XGBoost"],
           category: "Data Science / Machine Learning – Fraud Detection",
           link: "https://woodybor1.github.io/Credit-Card-Fraud-Detection/"
@@ -330,7 +332,7 @@ function App() {
                   marginBottom: '1rem'
                 }}>{project.category}</div>
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{project.title}</h3>
-                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>{project.description}</p>
+                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', marginBottom: '1.5rem' }} dangerouslySetInnerHTML={{ __html: project.description }}></p>
                 <div style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
                   {project.tags.map(tag => (
                     <span key={tag} className="project-tag">#{tag}</span>
