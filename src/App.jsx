@@ -40,6 +40,15 @@ const translations = {
       learn_more: "En savoir plus →",
       items: [
         {
+          id: 5,
+          title: "Supervision d'un parc éolien — Pipeline data end to end Microsoft Fabric",
+          description: "<strong>Finalité du projet :</strong> Réduire les temps d'arrêt non planifiés et maximiser la production énergétique en transformant les signaux IoT bruts en alertes proactives et tableaux de bord décisionnels.<br /><br /><strong>Architecture & Stack :</strong><br />• <strong>Stockage & Infrastructure :</strong> OneLake, Lakehouse (format Delta Parquet)<br />• <strong>Ingestion & Transformation :</strong> Dataflow Gen2, Data Pipelines, PySpark, Spark SQL<br />• <strong>Modélisation & Mesures :</strong> Modèle sémantique en étoile, DAX<br />• <strong>Restitution & Alertes :</strong> Power BI, Data Activator (Teams, Outlook)",
+          tags: ["Microsoft Fabric", "OneLake", "Lakehouse", "Delta Parquet", "PySpark", "Spark SQL", "Dataflow Gen2", "Power BI", "Data Activator", "DAX", "IoT"],
+          category: "Data Engineering & Analytics / Microsoft Fabric",
+          image: "portfolio/fabric_pipeline.png",
+          link: "https://github.com/WoodyBOR1/Projet-Fabric"
+        },
+        {
           id: 0,
           title: "Projet « Article 51 CECICS »",
           description: "Pilotage du traitement et de l’analyse des données pour l’évaluation finale du projet intégré au droit commun.",
@@ -79,8 +88,6 @@ const translations = {
           link: "https://app.powerbi.com/reportEmbed?reportId=4bf4c51a-a0af-4177-9fd2-ca97b800470c&autoAuth=true&ctid=a27be1f9-c44b-47a2-b99e-810261deecb8"
         }
       ]
-
-      
     },
     contact: {
       title: "DÉMARRONS UN PROJET ENSEMBLE",
@@ -117,6 +124,15 @@ const translations = {
       title: "KEY REALIZATIONS",
       learn_more: "Learn more →",
       items: [
+        {
+          id: 5,
+          title: "Wind Farm Supervision — End-to-End Data Pipeline Microsoft Fabric",
+          description: "<strong>Project Purpose:</strong> Reduce unplanned downtime and maximize energy production by transforming raw IoT signals into proactive alerts and decision-making dashboards.<br /><br /><strong>Architecture & Stack:</strong><br />• <strong>Storage & Infrastructure:</strong> OneLake, Lakehouse (Delta Parquet format)<br />• <strong>Ingestion & Transformation:</strong> Dataflow Gen2, Data Pipelines, PySpark, Spark SQL<br />• <strong>Modeling & Measures:</strong> Star semantic model, DAX<br />• <strong>Delivery & Alerts:</strong> Power BI, Data Activator (Teams, Outlook)",
+          tags: ["Microsoft Fabric", "OneLake", "Lakehouse", "Delta Parquet", "PySpark", "Spark SQL", "Dataflow Gen2", "Power BI", "Data Activator", "DAX", "IoT"],
+          category: "Data Engineering & Analytics / Microsoft Fabric",
+          image: "portfolio/fabric_pipeline.png",
+          link: "https://github.com/WoodyBOR1/Projet-Fabric"
+        },
         {
           id: 0,
           title: "Project « Article 51 CECICS »",
@@ -320,7 +336,9 @@ function App() {
                 padding: '2rem',
                 borderRadius: '24px',
                 border: '1px solid rgba(255,255,255,0.05)',
-                transition: 'all 0.3s ease'
+                transition: 'all 0.3s ease',
+                display: 'flex',
+                flexDirection: 'column'
               }}>
                 <div style={{
                   background: 'rgba(0, 123, 255, 0.1)',
@@ -329,11 +347,26 @@ function App() {
                   borderRadius: '100px',
                   fontSize: '0.8rem',
                   display: 'inline-block',
-                  marginBottom: '1rem'
+                  marginBottom: '1rem',
+                  alignSelf: 'flex-start'
                 }}>{project.category}</div>
+
+                {project.image && (
+                  <div
+                    className="project-image-wrapper"
+                    onClick={() => window.open(project.image, '_blank')}
+                    title={lang === 'fr' ? "Cliquer pour afficher le schéma en haute définition" : "Click to view full architecture diagram"}
+                  >
+                    <img src={project.image} alt={project.title} className="project-card-img" />
+                    <span className="project-image-badge">
+                      🔍 {lang === 'fr' ? "Schéma Architecture Fabric" : "Fabric Architecture Diagram"}
+                    </span>
+                  </div>
+                )}
+
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{project.title}</h3>
-                <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', marginBottom: '1.5rem' }} dangerouslySetInnerHTML={{ __html: project.description }}></p>
-                <div style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
+                <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: '1.6' }} dangerouslySetInnerHTML={{ __html: project.description }}></p>
+                <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '1.5rem', marginTop: 'auto' }}>
                   {project.tags.map(tag => (
                     <span key={tag} className="project-tag">#{tag}</span>
                   ))}

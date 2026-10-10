@@ -478,6 +478,63 @@ nav {
   border-color: var(--accent-secondary);
 }
 
+/* Project Image Card */
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image-wrapper:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-secondary);
+  box-shadow: 0 12px 30px rgba(0, 212, 255, 0.25);
+}
+
+.project-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  padding: 6px;
+}
+
+.project-image-wrapper:hover .project-card-img {
+  transform: scale(1.03);
+}
+
+.project-image-badge {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(11, 22, 34, 0.88);
+  backdrop-filter: blur(8px);
+  color: #00d4ff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.project-image-wrapper:hover .project-image-badge {
+  background: #007bff;
+  color: #ffffff;
+}
+
 .experience-highlight {
   display: inline-block;
   font-size: 0.8rem;
